@@ -1,0 +1,86 @@
+{
+  "company": "知行生活",
+  "currentPeriod": "2026-10",
+  "asOfDate": "2026-10-13",
+  "customers": [
+    {"id":"C001","name":"青禾商贸","segment":"重点客户","city":"上海","owner":"林先生"},
+    {"id":"C002","name":"北辰零售","segment":"重点客户","city":"杭州","owner":"林先生"},
+    {"id":"C003","name":"云杉科技","segment":"成长客户","city":"苏州","owner":"林先生"},
+    {"id":"C004","name":"嘉木家居","segment":"成长客户","city":"南京","owner":"林先生"},
+    {"id":"C005","name":"远帆百货","segment":"普通客户","city":"宁波","owner":"林先生"},
+    {"id":"C006","name":"星河商用","segment":"重点客户","city":"上海","owner":"林先生"}
+  ],
+  "products": [
+    {"id":"P001","name":"企业礼赠组合","category":"礼赠产品"},
+    {"id":"P002","name":"门店设备方案","category":"零售设备"},
+    {"id":"P003","name":"云端软件订阅","category":"数字服务"},
+    {"id":"P004","name":"家居配套订单","category":"家居用品"},
+    {"id":"P005","name":"百货分销采购","category":"批发分销"},
+    {"id":"P006","name":"商用维护服务","category":"企业服务"}
+  ],
+  "orders": [
+    {"id":"SO-2601","date":"2026-10-02","customerId":"C001","productId":"P001","amount":143000,"cost":82940,"dueDate":"2026-10-30"},
+    {"id":"SO-2602","date":"2026-10-08","customerId":"C001","productId":"P001","amount":143000,"cost":82940,"dueDate":"2026-11-07"},
+    {"id":"SO-2603","date":"2026-10-03","customerId":"C002","productId":"P002","amount":120500,"cost":75915,"dueDate":"2026-10-31"},
+    {"id":"SO-2604","date":"2026-10-09","customerId":"C002","productId":"P002","amount":120500,"cost":75915,"dueDate":"2026-11-08"},
+    {"id":"SO-2605","date":"2026-10-04","customerId":"C003","productId":"P003","amount":99000,"cost":60390,"dueDate":"2026-11-03"},
+    {"id":"SO-2606","date":"2026-10-10","customerId":"C003","productId":"P003","amount":99000,"cost":60390,"dueDate":"2026-11-09"},
+    {"id":"SO-2607","date":"2026-10-05","customerId":"C004","productId":"P004","amount":88000,"cost":62480,"dueDate":"2026-10-10"},
+    {"id":"SO-2608","date":"2026-10-11","customerId":"C004","productId":"P004","amount":88000,"cost":62480,"dueDate":"2026-10-25"},
+    {"id":"SO-2609","date":"2026-10-01","customerId":"C005","productId":"P005","amount":76500,"cost":56610,"dueDate":"2026-10-10"},
+    {"id":"SO-2610","date":"2026-10-07","customerId":"C005","productId":"P005","amount":76500,"cost":56610,"dueDate":"2026-10-10"},
+    {"id":"SO-2611","date":"2026-10-06","customerId":"C006","productId":"P006","amount":116000,"cost":73185,"dueDate":"2026-11-04"},
+    {"id":"SO-2612","date":"2026-10-12","customerId":"C006","productId":"P006","amount":116000,"cost":73185,"dueDate":"2026-11-10"}
+  ],
+  "receipts": [
+    {"id":"RC-001","date":"2026-10-04","orderId":"SO-2601","amount":103000},
+    {"id":"RC-002","date":"2026-10-10","orderId":"SO-2602","amount":143000},
+    {"id":"RC-003","date":"2026-10-05","orderId":"SO-2603","amount":50500},
+    {"id":"RC-004","date":"2026-10-11","orderId":"SO-2604","amount":120500},
+    {"id":"RC-005","date":"2026-10-07","orderId":"SO-2605","amount":41000},
+    {"id":"RC-006","date":"2026-10-12","orderId":"SO-2606","amount":99000},
+    {"id":"RC-007","date":"2026-10-08","orderId":"SO-2607","amount":55000},
+    {"id":"RC-008","date":"2026-10-12","orderId":"SO-2608","amount":31000},
+    {"id":"RC-009","date":"2026-10-12","orderId":"SO-2611","amount":3000},
+    {"id":"RC-010","date":"2026-10-13","orderId":"SO-2612","amount":116000}
+  ],
+  "expenses": [
+    {"id":"EX-001","date":"2026-10-05","category":"薪酬","description":"团队薪酬","amount":44000},
+    {"id":"EX-002","date":"2026-10-01","category":"租金","description":"办公室及仓储租金","amount":12000},
+    {"id":"EX-003","date":"2026-10-09","category":"营销","description":"渠道推广费用","amount":19000},
+    {"id":"EX-004","date":"2026-10-12","category":"行政","description":"行政及软件订阅","amount":7960}
+  ],
+  "cashLedger": {
+    "openingBalance": 862000,
+    "entries": [
+      {"id":"CF-001","date":"2026-10-04","type":"inflow","category":"客户回款","description":"青禾商贸回款","amount":103000,"referenceId":"RC-001"},
+      {"id":"CF-002","date":"2026-10-10","type":"inflow","category":"客户回款","description":"青禾商贸回款","amount":143000,"referenceId":"RC-002"},
+      {"id":"CF-003","date":"2026-10-05","type":"inflow","category":"客户回款","description":"北辰零售回款","amount":50500,"referenceId":"RC-003"},
+      {"id":"CF-004","date":"2026-10-11","type":"inflow","category":"客户回款","description":"北辰零售回款","amount":120500,"referenceId":"RC-004"},
+      {"id":"CF-005","date":"2026-10-07","type":"inflow","category":"客户回款","description":"云杉科技回款","amount":41000,"referenceId":"RC-005"},
+      {"id":"CF-006","date":"2026-10-12","type":"inflow","category":"客户回款","description":"云杉科技回款","amount":99000,"referenceId":"RC-006"},
+      {"id":"CF-007","date":"2026-10-08","type":"inflow","category":"客户回款","description":"嘉木家居回款","amount":31000,"referenceId":"RC-007"},
+      {"id":"CF-008","date":"2026-10-12","type":"inflow","category":"客户回款","description":"嘉木家居回款","amount":55000,"referenceId":"RC-008"},
+      {"id":"CF-009","date":"2026-10-12","type":"inflow","category":"客户回款","description":"星河商用回款","amount":3000,"referenceId":"RC-009"},
+      {"id":"CF-010","date":"2026-10-13","type":"inflow","category":"客户回款","description":"星河商用回款","amount":116000,"referenceId":"RC-010"},
+      {"id":"CF-011","date":"2026-10-13","type":"outflow","category":"供应商货款","description":"本月已支付采购及履约成本","amount":705040},
+      {"id":"CF-012","date":"2026-10-13","type":"outflow","category":"薪酬","description":"团队薪酬","amount":44000},
+      {"id":"CF-013","date":"2026-10-13","type":"outflow","category":"租金","description":"办公室及仓储租金","amount":12000},
+      {"id":"CF-014","date":"2026-10-13","type":"outflow","category":"营销","description":"渠道推广费用","amount":19000},
+      {"id":"CF-015","date":"2026-10-13","type":"outflow","category":"行政","description":"行政及软件订阅","amount":7960}
+    ]
+  },
+  "cashForecast": {"monthlyNetBurn":348333,"method":"未来三个月固定支出与计划采购的月均净现金消耗估算"},
+  "monthlyHistory": [
+    {"period":"2026-05","revenue":820000,"grossProfit":286000,"cashBalance":920000,"receivables":410000,"receivablesOverdue":120000},
+    {"period":"2026-06","revenue":910000,"grossProfit":322000,"cashBalance":875000,"receivables":438000,"receivablesOverdue":132000},
+    {"period":"2026-07","revenue":880000,"grossProfit":308000,"cashBalance":932000,"receivables":396000,"receivablesOverdue":108000},
+    {"period":"2026-08","revenue":1050000,"grossProfit":374000,"cashBalance":890000,"receivables":472000,"receivablesOverdue":154000},
+    {"period":"2026-09","revenue":1140000,"grossProfit":410000,"cashBalance":862000,"receivables":501000,"receivablesOverdue":167000}
+  ],
+  "risks": [
+    {"id":"R001","level":"high","title":"回款偏慢，现金储备约可支撑 2.4 个月","detail":"当前未收应收账款 52.4 万元，其中逾期 18.6 万元。主要来自远帆百货和嘉木家居。","action":"本周优先跟进逾期应收","source":"receivables"},
+    {"id":"R002","level":"medium","title":"嘉木家居毛利率偏低","detail":"本月毛利率低于 30%，建议复核折扣政策与履约成本。","action":"复核折扣与配送费用","source":"C004"},
+    {"id":"R003","level":"low","title":"营销费用需要核对回报","detail":"本月营销支出 1.9 万元，建议按渠道核算获客回报。","action":"复盘渠道投放 ROI","source":"EX-003"}
+  ]
+}
